@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:varun_practice/BottomNavbar.dart';
 import 'package:varun_practice/FirstScreen.dart';
 import 'package:varun_practice/ScrollScreen.dart';
+import 'package:varun_practice/dialogscreen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,6 +13,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Firstscreen());
+    return const MaterialApp(home: Dialogscreen());
   }
 }

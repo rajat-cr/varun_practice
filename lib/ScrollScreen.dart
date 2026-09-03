@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:varun_practice/SecondScrreen.dart';
 
 class Scrollscreen extends StatefulWidget {
   const Scrollscreen({super.key});
@@ -49,7 +50,12 @@ class _ScrollscreenState extends State<Scrollscreen> {
                     if (name.text.isEmpty) {
                       Fluttertoast.showToast(msg: "Enter Your Name");
                     } else {
-                      print("My Name is: ${name.text}");
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Secondscrreen(name : name.text),
+                        ),
+                      );
                     }
                   },
                   style: ElevatedButton.styleFrom(
