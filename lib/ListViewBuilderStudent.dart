@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/StudentDetailScreen.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class Listviewbuilderstudent extends StatefulWidget {
